@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EFFETS CSS DEGRADE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+    @import url('https://fonts.googleapis.com/css?family=Codystar:300|Roboto+Condensed:300');
+    @import url('https://fonts.googleapis.com/css?family=Lato:100');
+
+    html {
+        -webkit-font-smoothing: antialiased;
+        width: 100%;
+        font: 100%/1.5 "Lato";
+        overflow: hidden;
+        /* Centering in The Unknown */
+        text-align: center;
+    }
+
+    html:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+
+    body {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 38rem;
+    }
+
+    .butt {
+        width:120px;
+        height:60px;
+        border: 2px solid #f35626;
+        line-height: 1.375;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin:auto;
+        font-weight: 700;
+        color: #f35626;
+        cursor: pointer;
+        animation: hue 10s infinite linear;
+        background-color:white;
+        font-family: "Lato";
+        font-size:20px;
+    }
+
+    .title {
+
+        text-align: center;
+        font-size: 6em;
+        background-image: -webkit-linear-gradient(92deg, #f3268c, #e4e714);
+        font-family: "Lato";
+        color: #f3268c;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: hue 10s infinite linear;
+        margin-bottom: 2rem;
+        font-style: normal;
+        font-weight: lighter;
+        line-height: 1;
+        letter-spacing: -.05em;
+    }
+
+    /* ANIMATION */
+
+    @keyframes hue {
+
+        0% {
+            -webkit-filter: hue-rotate(0deg);
+        }
+        100% {
+            -webkit-filter: hue-rotate(-360deg);
+        }
+    }
+</style>
+
+<body>
+    <h1 class="title">
+        Animation css dégradé de couleurs
+    </h1>
+    <a href="https://github.com/YaminaBoghossian"><button class="butt">Try it!</button></a>
+</body>
+
+
+</html>
