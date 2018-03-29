@@ -1,4 +1,5 @@
 # TextColorAnimation
 CSS color animation on text 
 
-![screen](./)
+![screen](TextColorAnimation/anim.gif)
+
